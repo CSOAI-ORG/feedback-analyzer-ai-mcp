@@ -1,0 +1,20 @@
+{
+  "name": "feedback-analyzer-ai-mcp",
+  "description": "MEOK AI Labs \u2014 Feedback Analyzer tools for AI agents and LLMs",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/feedback-analyzer-ai-mcp",
+  "runtime": "python",
+  "entrypoint": "server.py",
+  "tools": [
+    "analyze_feedback"
+  ],
+  "categories": [
+    "Analytics",
+    "Customer Experience"
+  ],
+  "pricing": {
+    "free": "50 calls/day",
+    "pro": "$9/mo"
+  }
+}
