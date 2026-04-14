@@ -1,10 +1,5 @@
 name: feedback-analyzer-ai-mcp
-description: "MEOK AI Labs — Feedback Analyzer tools for AI agents and LLMs"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/feedback-analyzer-ai-mcp
-license: MIT
-categories: [Analytics, Customer Experience]
-tags: [feedback-analysis, sentiment-analysis, customer-feedback, nps, review-analysis]
-runtime: python
-entrypoint: server.py
+description: "Feedback Analyzer Ai Mcp \u2014 Analyze customer feedback for sentiment\
+  \ and themes."
+version: 1.0.0
+tools: []
