@@ -1,6 +1,6 @@
 {
   "name": "feedback-analyzer-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Analyze customer feedback for sentiment, themes, and actionable insights.",
+  "description": "Feedback Analyzer Ai tools for AI agents. Capabilities: analyze feedback, extract themes, sentiment trend. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
