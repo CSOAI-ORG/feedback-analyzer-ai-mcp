@@ -1,0 +1,53 @@
+{
+  "name": "feedback-analyzer-ai",
+  "description": "Analyze customer feedback for sentiment, themes, and actionable insights.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/feedback-analyzer-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "analyze_feedback",
+      "description": "Analyze customer feedback for sentiment breakdown with per-item scores."
+    },
+    {
+      "name": "extract_themes",
+      "description": "Extract recurring themes from feedback using keyword matching."
+    },
+    {
+      "name": "sentiment_trend",
+      "description": "Compute sentiment trend over time. Each item needs 'text' and 'date' (YYYY-MM-DD) keys."
+    },
+    {
+      "name": "generate_summary",
+      "description": "Generate an executive summary of feedback with key takeaways and recommendations."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Natural Language Processing"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
