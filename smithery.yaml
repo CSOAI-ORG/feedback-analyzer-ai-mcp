@@ -1,7 +1,32 @@
 name: feedback-analyzer-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Analyze customer feedback for sentiment, themes, and actionable insights.
 version: 1.0.0
 tools:
 - name: analyze_feedback
-  description: Analyze customer feedback
-  parameters: []
+  description: Analyze customer feedback for sentiment breakdown with per-item scores.
+  parameters:
+  - name: feedback
+    type: array
+    required: true
+- name: extract_themes
+  description: Extract recurring themes from feedback using keyword matching.
+  parameters:
+  - name: feedback
+    type: array
+    required: true
+- name: sentiment_trend
+  description: Compute sentiment trend over time. Each item needs 'text' and 'date'
+    (YYYY-MM-DD) keys.
+  parameters:
+  - name: feedback_with_dates
+    type: array
+    required: true
+- name: generate_summary
+  description: Generate an executive summary of feedback with key takeaways and recommendations.
+  parameters:
+  - name: feedback
+    type: array
+    required: true
+  - name: max_points
+    type: integer
+    required: false

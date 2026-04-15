@@ -1,15 +1,69 @@
 {
   "name": "feedback-analyzer-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Analyze customer feedback for sentiment, themes, and actionable insights.",
   "version": "1.0.0",
   "tools": [
     {
       "name": "analyze_feedback",
-      "description": "Analyze customer feedback",
+      "description": "Analyze customer feedback for sentiment breakdown with per-item scores.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "feedback": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "feedback"
+        ]
+      }
+    },
+    {
+      "name": "extract_themes",
+      "description": "Extract recurring themes from feedback using keyword matching.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "feedback": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "feedback"
+        ]
+      }
+    },
+    {
+      "name": "sentiment_trend",
+      "description": "Compute sentiment trend over time. Each item needs 'text' and 'date' (YYYY-MM-DD) keys.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "feedback_with_dates": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "feedback_with_dates"
+        ]
+      }
+    },
+    {
+      "name": "generate_summary",
+      "description": "Generate an executive summary of feedback with key takeaways and recommendations.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "feedback": {
+            "type": "array"
+          },
+          "max_points": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "feedback"
+        ]
       }
     }
   ]
