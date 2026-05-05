@@ -1,33 +1,38 @@
-# Feedback Analyzer AI MCP Server
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Analyze customer feedback for sentiment, themes, and actionable insights
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/feedback-analyzer-ai-mcp)](https://github.com/CSOAI-ORG/feedback-analyzer-ai-mcp/stargazers)
+
+# ufeedbackU analyzerU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/feedback-analyzer-ai-mcp)](https://www.npmjs.com/package/@meok-ai/feedback-analyzer-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/feedback-analyzer-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install feedback-analyzer-ai-mcp
+# or
+npm install -g @meok-ai/feedback-analyzer-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-This server provides feedback analysis including:
-
-- Sentiment scoring (positive, negative, neutral) using keyword matching
-- Theme extraction across categories: pricing, quality, support, usability, delivery, features
-- Batch feedback analysis
-- Trend detection over time
-- Actionable insight generation
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
