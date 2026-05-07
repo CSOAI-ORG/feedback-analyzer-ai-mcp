@@ -65,6 +65,11 @@ def analyze_feedback(feedback: list[str], api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        feedback (list[str]): The feedback to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -119,6 +124,11 @@ def extract_themes(feedback: list[str], api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        feedback (list[str]): The feedback to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -179,6 +189,11 @@ def sentiment_trend(feedback_with_dates: list[dict], api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        feedback_with_dates (list[dict]): The feedback with dates to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -239,6 +254,12 @@ def generate_summary(feedback: list[str], max_points: int = 5, api_key: str = ""
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        feedback (list[str]): The feedback to analyze or process.
+        max_points (int): The max points to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
