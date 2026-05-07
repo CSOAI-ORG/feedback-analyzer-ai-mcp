@@ -1,3 +1,5 @@
+[![feedback-analyzer-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/feedback-analyzer-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/feedback-analyzer-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/feedback-analyzer-ai-mcp)](https://github.com/CSOAI-ORG/feedback-analyzer-ai-mcp/stargazers)
