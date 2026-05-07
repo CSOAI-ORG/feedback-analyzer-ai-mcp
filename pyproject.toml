@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "feedback-analyzer-ai-mcp"
-version = "1.0.3"
+version = "1.0.4"
 readme = "README.md"
 description = "Feedback Analyzer Ai tools for AI agents. Capabilities: analyze feedback, extract themes, sentiment trend. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
