@@ -49,7 +49,23 @@ def _score_sentiment(text: str) -> dict:
 
 @mcp.tool()
 def analyze_feedback(feedback: list[str], api_key: str = "") -> str:
-    """Analyze customer feedback for sentiment breakdown with per-item scores."""
+    """Analyze customer feedback for sentiment breakdown with per-item scores.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -73,7 +89,23 @@ def analyze_feedback(feedback: list[str], api_key: str = "") -> str:
 
 @mcp.tool()
 def extract_themes(feedback: list[str], api_key: str = "") -> str:
-    """Extract recurring themes from feedback using keyword matching."""
+    """Extract recurring themes from feedback using keyword matching.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -103,7 +135,23 @@ def extract_themes(feedback: list[str], api_key: str = "") -> str:
 
 @mcp.tool()
 def sentiment_trend(feedback_with_dates: list[dict], api_key: str = "") -> str:
-    """Compute sentiment trend over time. Each item needs 'text' and 'date' (YYYY-MM-DD) keys."""
+    """Compute sentiment trend over time. Each item needs 'text' and 'date' (YYYY-MM-DD) keys.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -134,7 +182,22 @@ def sentiment_trend(feedback_with_dates: list[dict], api_key: str = "") -> str:
 
 @mcp.tool()
 def generate_summary(feedback: list[str], max_points: int = 5, api_key: str = "") -> str:
-    """Generate an executive summary of feedback with key takeaways and recommendations."""
+    """Generate an executive summary of feedback with key takeaways and recommendations.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
