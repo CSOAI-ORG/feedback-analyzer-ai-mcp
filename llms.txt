@@ -1,0 +1,33 @@
+# feedback-analyzer-ai-mcp
+# **MCP server for feedback analyzer ai mcp operations**
+
+## Install
+```bash
+pip install feedback-analyzer-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `analyze_feedback`
+Analyze customer feedback for sentiment breakdown with per-item scores.
+
+### `extract_themes`
+Extract recurring themes from feedback using keyword matching.
+
+### `sentiment_trend`
+Compute sentiment trend over time. Each item needs 'text' and 'date' (YYYY-MM-DD) keys.
+
+### `generate_summary`
+Generate an executive summary of feedback with key takeaways and recommendations.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

@@ -1,0 +1,9 @@
+# feedback-analyzer-ai-mcp - Auto-trigger Rules
+
+When the user asks about feedback analyzer, use feedback-analyzer-ai-mcp tools: analyze_feedback, extract_themes, sentiment_trend, generate_summary
+
+**MCP server for feedback analyzer ai mcp operations**
+
+Install: `pip install feedback-analyzer-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

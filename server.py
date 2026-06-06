@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""MEOK AI Labs — feedback-analyzer-ai-mcp MCP Server. Analyze customer feedback for sentiment and themes."""
+"""
+MEOK AI Labs — feedback-analyzer-ai-mcp MCP Server. Analyze customer feedback for sentiment and themes."""
 
 import json
 import re
@@ -8,7 +9,6 @@ from collections import defaultdict, Counter
 
 from mcp.server.fastmcp import FastMCP
 import sys, os
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 
 FREE_DAILY_LIMIT = 15
@@ -87,7 +87,7 @@ def analyze_feedback(feedback: list[str], api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     results = [_score_sentiment(f) for f in feedback]
@@ -146,7 +146,7 @@ def extract_themes(feedback: list[str], api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     theme_counts = Counter()
@@ -211,7 +211,7 @@ def sentiment_trend(feedback_with_dates: list[dict], api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     by_date = defaultdict(list)
@@ -277,7 +277,7 @@ def generate_summary(feedback: list[str], max_points: int = 5, api_key: str = ""
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     results = [_score_sentiment(f) for f in feedback]
@@ -319,5 +319,8 @@ def generate_summary(feedback: list[str], max_points: int = 5, api_key: str = ""
     }, indent=2)
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

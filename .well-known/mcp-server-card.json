@@ -1,0 +1,25 @@
+{
+  "name": "feedback-analyzer-ai-mcp",
+  "title": "Feedback Analyzer Ai Mcp",
+  "description": "Feedback Analyzer Ai tools for AI agents. Capabilities: analyze feedback, extract themes, sentiment trend. Built by MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "analyze_feedback"
+    },
+    {
+      "name": "extract_themes"
+    },
+    {
+      "name": "sentiment_trend"
+    },
+    {
+      "name": "generate_summary"
+    }
+  ]
+}
