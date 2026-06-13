@@ -1,0 +1,100 @@
+{
+  "name": "Feedback Analyzer Ai Mcp",
+  "version": "1.0.6",
+  "url": "https://mcp.meok.ai/feedback-analyzer-ai-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "Feedback Analyzer Ai tools for AI agents. Capabilities: analyze feedback, extract themes, sentiment trend. Built by MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "analyze_feedback",
+      "name": "Analyze Feedback",
+      "description": "Analyze Feedback — a tool of the feedback-analyzer-ai-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "extract_themes",
+      "name": "Extract Themes",
+      "description": "Extract Themes — a tool of the feedback-analyzer-ai-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sentiment_trend",
+      "name": "Sentiment Trend",
+      "description": "Sentiment Trend — a tool of the feedback-analyzer-ai-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "generate_summary",
+      "name": "Generate Summary",
+      "description": "Generate Summary — a tool of the feedback-analyzer-ai-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "feedback-analyzer-ai-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
